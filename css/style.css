@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.bg {
+    background: linear-gradient(93.9deg, #9D4EDD 0%, #10002B 100%);
+    min-width: 100vw;
+    min-height: 330px;
+    padding-top: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+    font-size: 2.5em;
+}
+
+.input-task {
+    display: flex;
+    margin-top: 30px;
+}
+
+input[type="text"] {
+    width: 580px;
+    padding-left: 25px;
+    font-size: 1.05em;
+    color: black;
+    font-weight: bold;
+}
+
+input[type="text"]::placeholder {
+    font-size: 1.15em;
+    color: rgba(0, 0, 0, 0.55);
+}
+
+input[type="submit"] {
+    width: 170px;
+    background: #9D4EDD;
+    color: white;
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.input-task input {
+    height: 55px;
+    box-shadow: 0px 22px 40px 0px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    margin: -70px auto 0 auto;
+    padding: 25px;
+    width: 750px;
+    height: 600px;
+    background: white;
+    box-shadow: 0px 22px 40px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.task-content {
+    width: 680px;
+    height: 55px;
+    background: linear-gradient(90.39deg, #9D4EDD 0%, #5A189A 100%);
+    box-shadow: 0px 22px 40px 0px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.task-content input {
+    background: none;
+    font-weight: bold;
+    color: white;
+    font-size: 1.05em;
+}
+
+.delete {
+    background: #FF0000;
+    width: 70px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete i {
+    color: white;
+    font-size: 1.6em;
+    cursor: pointer;
+}
+
+.edit {
+    background: white;
+    width: 70px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit i {
+    color: black;
+    font-size: 1.6em;
+    cursor: pointer;
+}
+
+.date {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#checkbox {
+    all: unset;
+    width: 25px;
+    height: 23px;
+    background: white;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+#checkbox:checked {
+    background-image: url(../images/check.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (max-width: 820px) {
+    input[type="text"] {
+        width: 380px;
+    }
+
+    input[type="submit"] {
+        width: 130px;
+    }
+
+    .container {
+        width: 510px;
+    }
+
+    .task-content {
+        width: 420px;
+    }
+
+    #checkbox {
+        width: 23px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 588px) {
+    input[type="text"] {
+        width: 320px;
+    }
+
+    input[type="submit"] {
+        width: 130px;
+    }
+}
+
+@media (max-width: 530px) {
+    .container {
+        width: 100%;
+    }
+}
+ 
+@media (max-width: 520px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    input[type="text"] {
+        width: 220px;
+    }
+
+    .task input[type="text"] {
+        width: 220px;
+        padding-left: 10px;
+    }
+
+    input[type="text"]::placeholder {
+        font-size: 0.8em;
+    }
+
+    input[type="submit"] {
+        width: 100px;
+        font-size: 1em;
+    }
+
+    .task-content {
+        width: 380px;
+        justify-content: space-between;
+    }
+
+    .delete {
+        width: 60px;
+    }
+}
+
+@media (max-width: 395px) {
+    .task-content {
+        width: 310px;
+        font-size: 0.8em;
+    }
+
+    .task input[type="text"] {
+        padding-left: 15px;
+    }
+
+    .delete {
+        width: 50px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 330px) {
+    input[type="text"] {
+        width: 200px;
+    }
+
+    .task-content {
+        width: 310px;
+        font-size: 0.8em;
+    }
+
+    .task input[type="text"] {
+        padding-left: 15px;
+    }
+
+    .delete {
+        width: 50px;
+        margin-left: 10px;
+    }
+}

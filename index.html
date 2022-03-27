@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>Lista de tarefas</title>
+</head>
+<body>
+    
+    <main>
+        <div class="bg">
+            <h1>Lista de tarefas</h1>
+            <div class="input-task">
+                <input type="text" name="task" id="task" placeholder="Qual a sua tarefa?">
+                <input onclick="taskManager()" type="submit" value="Cadastrar" id="submit">
+            </div>
+        </div>
+
+        <div class="container">
+            <!--Trecho criado dinamicamente: 
+            <div class="task">
+                <div class="date">Data de criação:</div>
+                <div class="task-content">
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <input type="text" name="task-text" id="task-text" disabled>
+                    <div class="edit">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                    <div class="delete">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </main>
+
+    <script src="js/moment.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
