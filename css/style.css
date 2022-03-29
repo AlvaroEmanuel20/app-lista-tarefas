@@ -121,6 +121,7 @@ input[type="submit"] {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 5px;
 }
 
 .edit i {
@@ -228,12 +229,15 @@ input[type="submit"] {
     }
 
     .task input[type="text"] {
-        padding-left: 15px;
+        padding-left: 10px;
     }
 
     .delete {
         width: 50px;
-        margin-left: 10px;
+    }
+
+    .edit {
+        width: 50px;
     }
 }
 
@@ -253,6 +257,5 @@ input[type="submit"] {
 
     .delete {
         width: 50px;
-        margin-left: 10px;
     }
 }
